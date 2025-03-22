@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7"
+  },
+  "name": "modules_l4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "build": "nodemon src/index.js --exec \"node -r dotenv/config .env.production\"",
+    "start": "nodemon src/index.js --exec \"node -r dotenv/config .env.development\"",
+    "deploy": "nodemon src/index.js --exec \"node -r dotenv/config .env.domain\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
